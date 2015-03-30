@@ -1,0 +1,141 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Carter One', cursive;
+}
+body {
+  background-color:#6B9CB7;
+  background-image: url('/images/wall3.jpg');
+  background-position: cover center;
+  
+  
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 3px;
+  }
+.header {
+    background-image: url("/images/kiss_lips1.png");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding-left: 10px;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+h1 {
+  color:#CC171C;
+  margin-top: 30px;
+  padding: 5px 2px 5px 2px;
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-bottom:4px;
+}
+h2 {
+  color: orange;
+}
+h4 {
+  margin-top: 6px;
+  margin-bottom: -5px;
+  
+}
+.header p {
+    margin-bottom: -10px;
+    margin-top: 15px;
+    font-size: 20px;
+   
+}
+#slider {
+  margin-top:20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  
+}
+#my-thumbs-list{
+  overflow: auto;
+  width: 100%;
+  height: 400px;
+  list-style: none;
+  background-color:#4C555D;
+  background-color: rgba(76,85,94,.5);
+  padding:0 8px 0 8px;
+  border: 5px solid #008490;
+  border-radius: .5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.header li {
+  display: inline;
+  text-align: center;
+}
+.header a {
+  margin-left: 7px;
+  font-size: 15px;
+  color: #555555;
+
+}
+.header a:hover {
+  margin-left: 7px;
+  background-color: #FF818C;
+  color: orange;
+  transition: 1s;
+}
+
+.main {
+    top: 146px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow-y:scroll;
+    padding-top: 2px;
+    
+}
+.main {
+  color: gray;
+}
+.thumbnail {
+  padding: 6px;
+  box-shadow:0px 2px 2px rgba(0,0,0,0.1); 
+  border-radius:.5em; 
+  border:0px; 
+  background-color:#EEDB02;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.thumbnail p {
+  margin-bottom:-7px;
+}
+.thumbnail img {
+  width: 100%;
+  display: block;
+}
+.large-picture img {
+  padding: 6px;
+  box-shadow:0px 4px 4px rgba(0,0,0,0.3); 
+  border-radius:.5em; 
+  border: 10px solid #008490;
+  width: 100%;
+  background-color: #EEDB02;
+  margin-bottom: 20px;
+  
+}
+.footer {
+  height: 100px;
+  background-color: #7E803A;
+}
+.footer li {
+  display: inline;
+  margin-right: 40px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.selected {
+  border: 5px solid red;
+}

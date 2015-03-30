@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jolana Pourova</title>
+    <link rel="stylesheet" href="//s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+	  <link href='//fonts.googleapis.com/css?family=Carter+One' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="/stylesheets/jquery.mThumbnailScroller.css">
+    <link rel='stylesheet' href='/stylesheets/main.css'>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <meta name="viewport" content="initial-scale=1">
+  </head>
+  <body ng-app="Pourova">
+    <div class="header">
+        <div class="container-fluid">
+            <h1>Jolana Pourova</h1>
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="index.html">Gallery</a></li>
+                <li role="presentation"><a href="aboutme.html">About Me</a></li>
+                <li role="presentation"><a href="news.html">News</a></li>
+            </ul>
+        </div>
+    </div>
+      
+      
+      <!--angular experiment-->
+      
+      <!--<div class='main' ng-controller='MainController'>-->
+      <!--  <div class='container'>-->
+      <!--    <div class='row' ng-repeat='painting in paintings'>-->
+      <!--      <h2>{{ painting.name }}</h2>-->
+      <!--      <h3>{{ painting.medium }}</h3>-->
+      <!--      <img src='{{ painting.imgurl }}'>-->
+      <!--    </div>-->
+      <!--  </div>-->
+      <!--</div>-->
+
+      <!--angular experiment-->
+
+
+
+    <div class="main" ng-controller='MainController'>
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-3 col-xs-3 col-centered">
+            <div id='slider'>
+              <h4>&#x219f;Hover Up&#x219f;</h4>
+              <div id="my-thumbs-list" >
+                  <li ng-repeat='paintings in showcase'><a class="thumbnail"><img src='{{ paintings.imgurl }}'>
+                  <p>{{ paintings.name }}</p>
+                  <p>${{ paintings.price }}</p>
+                  </a></li>
+              </div>
+              <h4>&#x21a1;Hover Down&#x21a1;</h4>
+            </div>
+          </div>
+          <div class="col-lg-9 col-xs-9 col-centered">
+              <div class="large-picture" ng-repeat="paintings in showcase | filter:{ show : true }"><img src='{{paintings.imgurl}}'>
+                <!--<img src='images/IMG_10.jpg'>-->
+              </div>
+              
+          </div>
+          <!--<div class="col-1-lg col-xs-1 col-centered">-->
+          <!--  <h2>{{ paintings.name }}<br>{{ paintings.price | currency:"$":0}}</h2>-->
+          <!--</div>-->
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container-fluid">
+        
+      </div>
+    </div>
+    <script src="//s3.amazonaws.com/codecademy-content/projects/jquery.min.js"></script>
+    <script src="/scripts/jquery.mThumbnailScroller.min.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers/MainController.js"></script>
+  </body>
+</html>
