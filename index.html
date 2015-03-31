@@ -16,27 +16,10 @@
             <ul class="nav nav-tabs">
                 <li role="presentation" class="active"><a href="index.html">Gallery</a></li>
                 <li role="presentation"><a href="aboutme.html">About Me</a></li>
-                <li role="presentation"><a href="news.html">News</a></li>
+                <li role="presentation"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
-      
-      
-      <!--angular experiment-->
-      
-      <!--<div class='main' ng-controller='MainController'>-->
-      <!--  <div class='container'>-->
-      <!--    <div class='row' ng-repeat='painting in paintings'>-->
-      <!--      <h2>{{ painting.name }}</h2>-->
-      <!--      <h3>{{ painting.medium }}</h3>-->
-      <!--      <img src='{{ painting.imgurl }}'>-->
-      <!--    </div>-->
-      <!--  </div>-->
-      <!--</div>-->
-
-      <!--angular experiment-->
-
-
 
     <div class="main" ng-controller='MainController'>
       <div class="container-fluid">
@@ -46,8 +29,8 @@
               <h4>&#x219f;Hover Up&#x219f;</h4>
               <div id="my-thumbs-list" >
                   <li ng-repeat='paintings in showcase'><a class="thumbnail"><img src='{{ paintings.imgurl }}'>
-                  <p>{{ paintings.name }}</p>
-                  <p>${{ paintings.price }}</p>
+                  <!-- <p>{{ paintings.name }}</p>
+                  <p>${{ paintings.price }}</p> -->
                   </a></li>
               </div>
               <h4>&#x21a1;Hover Down&#x21a1;</h4>
